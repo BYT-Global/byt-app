@@ -1,3 +1,19 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+    <ion-split-pane when="(max-width: 1px)">
+        <ion-menu side="start">
+            <ion-header>
+                <ion-toolbar color="primary">
+                    <ion-title>By Your Trip</ion-title>
+                </ion-toolbar>
+            </ion-header>
+
+            <ion-content>
+                <ion-list>
+                    <ion-item (click)="logout()">Sair</ion-item>
+                </ion-list>
+            </ion-content>
+        </ion-menu>
+
+        <ion-router-outlet main></ion-router-outlet>
+    </ion-split-pane>
 </ion-app>
