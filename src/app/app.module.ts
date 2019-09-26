@@ -16,6 +16,7 @@ import {environment} from '../environments/environment';
 import {TokenService} from './core/auth/token.service';
 import {AuthGuard} from './core/auth/auth.guard';
 import {LoginGuard} from './core/auth/login.guard';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 export function jwtOptionsFactory() {
     return {
@@ -41,7 +42,8 @@ export function jwtOptionsFactory() {
             }
         }),
         AngularFireAuthModule,
-        AngularFireModule.initializeApp(environment.firebaseConfig)
+        AngularFireModule.initializeApp(environment.firebaseConfig),
+        BrowserAnimationsModule
     ],
     providers: [
         StatusBar,
