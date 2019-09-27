@@ -5,13 +5,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { EventsPage } from './events.page';
-import {MatButtonModule, MatCardModule, MatGridListModule, MatIconModule, MatToolbarModule} from '@angular/material';
+import { EventDetailsPage } from './event-details.page';
+import {MatToolbarModule} from '@angular/material';
 
 const routes: Routes = [
     {
         path: '',
-        component: EventsPage
+        component: EventDetailsPage
     }
 ];
 
@@ -21,12 +21,8 @@ const routes: Routes = [
         FormsModule,
         IonicModule,
         RouterModule.forChild(routes),
-        MatToolbarModule,
-        MatGridListModule,
-        MatCardModule,
-        MatButtonModule,
-        MatIconModule
+        MatToolbarModule
     ],
-    declarations: [EventsPage]
+    declarations: [EventDetailsPage]
 })
-export class EventsPageModule {}
+export class EventDetailsPageModule {}

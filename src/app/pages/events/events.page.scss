@@ -1,7 +1,7 @@
-.event-image {
-    height: 354px;
+.event-card {
+    max-width: 400px;
 }
 
-.like-btn {
-    margin-right: -10px;
+img {
+    max-width: calc(100% + 32px) !important;
 }

@@ -1,13 +1,23 @@
 <ion-tabs>
-    <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="events">
-            <ion-icon name="calendar"></ion-icon>
-            <ion-label>Eventos</ion-label>
-        </ion-tab-button>
+    <mat-tab-group headerPosition="below" mat-align-tabs="center">
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <ion-tab-button class="disable-ripple" tab="events">
+                    <ion-icon name="calendar"></ion-icon>
+                    <ion-label>Eventos</ion-label>
+                </ion-tab-button>
+            </ng-template>
+        </mat-tab>
 
-        <ion-tab-button tab="friends">
-            <ion-icon name="people"></ion-icon>
-            <ion-label>Amigos</ion-label>
-        </ion-tab-button>
-    </ion-tab-bar>
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <ion-tab-button class="disable-ripple" tab="friends">
+                    <ion-icon name="people"></ion-icon>
+                    <ion-label>Amigos</ion-label>
+                </ion-tab-button>
+            </ng-template>
+        </mat-tab>
+    </mat-tab-group>
 </ion-tabs>
+
+

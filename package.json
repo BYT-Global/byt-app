@@ -10,7 +10,8 @@
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "ionic": "ionic serve"
+        "ionic": "ionic serve",
+        "ionic:prod:watch": "ionic build --prod --watch"
     },
     "private": true,
     "dependencies": {

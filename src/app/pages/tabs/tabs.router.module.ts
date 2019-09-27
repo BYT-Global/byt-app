@@ -36,6 +36,10 @@ const routes: Routes = [
         path: '',
         redirectTo: '/tabs/events',
         pathMatch: 'full'
+    },
+    {
+        path: 'event-details',
+        loadChildren: () => import('../event-details/event-details.module').then(m => m.EventDetailsPageModule)
     }
 ];
 

@@ -1,66 +1,50 @@
 <ion-header>
-    <ion-toolbar>
-        <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
-        </ion-buttons>
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+            <ion-buttons slot="start">
+                <ion-menu-button></ion-menu-button>
+            </ion-buttons>
 
-        <ion-title>Amigos</ion-title>
-    </ion-toolbar>
+            <span>Amigos</span>
+        </mat-toolbar-row>
+    </mat-toolbar>
 </ion-header>
 
 <ion-content fullscreen class="ion-padding">
-    <ion-list>
-        <ion-list-header>
-            Meus amigos
-        </ion-list-header>
+    <mat-list>
+        <h3 mat-subheader>Meus amigos</h3>
 
-        <ion-item style="margin-bottom: 20px">
-            <ion-input placeholder="Procure amigos"></ion-input>
-            <ion-icon slot="end" name="search"></ion-icon>
-        </ion-item>
+        <mat-list-item style="margin-top: 20px; margin-bottom: 20px;">
+            <mat-form-field style="width: 100%">
+                <input matInput placeholder="Procure amigos">
+                <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+        </mat-list-item>
+    </mat-list>
 
-        <ion-item>
-            <ion-avatar slot="start">
-                <img src="https://raw.githubusercontent.com/ionic-team/ionic-docs/master/src/demos/api/list/avatar-ben.png">
-            </ion-avatar>
-            <ion-label>
-                <h2>Finn</h2>
-            </ion-label>
+    <mat-nav-list role="list">
+        <mat-list-item>
+            <img matListAvatar src="https://raw.githubusercontent.com/ionic-team/ionic-docs/master/src/demos/api/list/avatar-ben.png">
+            <h2 matLine>Ben</h2>
+            <mat-icon>chat</mat-icon>
+        </mat-list-item>
 
-            <ion-icon slot="end" name="chatboxes"></ion-icon>
-        </ion-item>
+        <mat-list-item>
+            <img matListAvatar src="https://raw.githubusercontent.com/ionic-team/ionic-docs/master/src/demos/api/list/avatar-finn.png">
+            <h2 matLine>Finn</h2>
+            <mat-icon>chat</mat-icon>
+        </mat-list-item>
 
-        <ion-item>
-            <ion-avatar slot="start">
-                <img src="https://raw.githubusercontent.com/ionic-team/ionic-docs/master/src/demos/api/list/avatar-finn.png">
-            </ion-avatar>
-            <ion-label>
-                <h2>Han</h2>
-            </ion-label>
+        <mat-list-item>
+            <img matListAvatar src="https://raw.githubusercontent.com/ionic-team/ionic-docs/master/src/demos/api/list/avatar-han.png">
+            <h2 matLine>Han</h2>
+            <mat-icon>chat</mat-icon>
+        </mat-list-item>
 
-            <ion-icon slot="end" name="chatboxes"></ion-icon>
-        </ion-item>
-
-        <ion-item>
-            <ion-avatar slot="start">
-                <img src="https://raw.githubusercontent.com/ionic-team/ionic-docs/master/src/demos/api/list/avatar-han.png">
-            </ion-avatar>
-            <ion-label>
-                <h2>Rey</h2>
-            </ion-label>
-
-            <ion-icon slot="end" name="chatboxes"></ion-icon>
-        </ion-item>
-
-        <ion-item>
-            <ion-avatar slot="start">
-                <img src="https://raw.githubusercontent.com/ionic-team/ionic-docs/master/src/demos/api/list/avatar-leia.png">
-            </ion-avatar>
-            <ion-label>
-                <h2>Luke</h2>
-            </ion-label>
-
-            <ion-icon slot="end" name="chatboxes"></ion-icon>
-        </ion-item>
-    </ion-list>
+        <mat-list-item>
+            <img matListAvatar src="https://raw.githubusercontent.com/ionic-team/ionic-docs/master/src/demos/api/list/avatar-leia.png">
+            <h2 matLine>Leia</h2>
+            <mat-icon>chat</mat-icon>
+        </mat-list-item>
+    </mat-nav-list>
 </ion-content>

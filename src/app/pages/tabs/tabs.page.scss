@@ -1,1 +1,7 @@
+.disable-ripple {
+    --ripple-color: transparent;
 
+    &:hover {
+        background: unset !important;
+    }
+}

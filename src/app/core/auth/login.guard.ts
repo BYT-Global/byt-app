@@ -19,7 +19,6 @@ export class LoginGuard implements CanActivate {
         route: ActivatedRouteSnapshot,
         state: RouterStateSnapshot
     ): boolean | Observable<boolean> | Promise<boolean> {
-        console.log('chegou no loginguard');
         if (this.tokenService.hasToken()) {
             this._router.navigate(['']);
             return false;

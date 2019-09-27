@@ -6,13 +6,16 @@ import { FormsModule } from '@angular/forms';
 import { TabsPageRoutingModule } from './tabs.router.module';
 
 import { TabsPage } from './tabs.page';
+import {MatIconModule, MatTabsModule} from '@angular/material';
 
 @NgModule({
     imports: [
         IonicModule,
         CommonModule,
         FormsModule,
-        TabsPageRoutingModule
+        TabsPageRoutingModule,
+        MatTabsModule,
+        MatIconModule
     ],
     declarations: [TabsPage]
 })

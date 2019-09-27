@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NavController} from '@ionic/angular';
 
 @Component({
     selector: 'app-events',
@@ -6,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./events.page.scss'],
 })
 export class EventsPage implements OnInit {
-    constructor() {}
+    constructor(private _navControl: NavController) {}
 
     ngOnInit() {}
+
+    async moreDetails() {
+        await this._navControl.navigateForward('event-details');
+    }
 }
