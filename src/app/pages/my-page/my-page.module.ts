@@ -5,13 +5,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AuthPage } from './auth.page';
-import {MatSnackBarModule} from '@angular/material';
+import { MyPagePage } from './my-page.page';
+import {MatButtonModule, MatCardModule, MatIconModule, MatToolbarModule} from '@angular/material';
 
 const routes: Routes = [
     {
         path: '',
-        component: AuthPage
+        component: MyPagePage
     }
 ];
 
@@ -21,8 +21,11 @@ const routes: Routes = [
         FormsModule,
         IonicModule,
         RouterModule.forChild(routes),
-        MatSnackBarModule
+        MatToolbarModule,
+        MatCardModule,
+        MatIconModule,
+        MatButtonModule
     ],
-    declarations: [AuthPage]
+    declarations: [MyPagePage]
 })
-export class AuthPageModule {}
+export class MyPagePageModule {}

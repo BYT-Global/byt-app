@@ -7,7 +7,7 @@ const routes: Routes = [
     {
         path: '',
         canActivate: [AuthGuard],
-        loadChildren: () => import('./pages/tabs/tabs.module').then(m => m.TabsPageModule)
+        loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
     },
     {
         path: 'auth',

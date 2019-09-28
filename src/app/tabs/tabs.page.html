@@ -2,9 +2,16 @@
     <mat-tab-group headerPosition="below" mat-align-tabs="center">
         <mat-tab>
             <ng-template mat-tab-label>
+                <ion-tab-button class="disable-ripple" tab="my-page">
+                    <ion-icon name="person"></ion-icon>
+                </ion-tab-button>
+            </ng-template>
+        </mat-tab>
+
+        <mat-tab>
+            <ng-template mat-tab-label>
                 <ion-tab-button class="disable-ripple" tab="events">
                     <ion-icon name="calendar"></ion-icon>
-                    <ion-label>Eventos</ion-label>
                 </ion-tab-button>
             </ng-template>
         </mat-tab>
@@ -13,7 +20,6 @@
             <ng-template mat-tab-label>
                 <ion-tab-button class="disable-ripple" tab="friends">
                     <ion-icon name="people"></ion-icon>
-                    <ion-label>Amigos</ion-label>
                 </ion-tab-button>
             </ng-template>
         </mat-tab>

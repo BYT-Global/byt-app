@@ -1,0 +1,166 @@
+<ion-header>
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+            <ion-buttons slot="start">
+                <ion-menu-button></ion-menu-button>
+            </ion-buttons>
+
+            <span>Be Your Trip!</span>
+        </mat-toolbar-row>
+    </mat-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="app-subheader"></div>
+
+    <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+        <ion-fab-button style="top: -38px;">
+            <ion-icon name="funnel"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+
+    <div class="my-content">
+        <ion-row>
+            <ion-col size-xs="5"
+                     size-sm="5"
+                     size-md="5"
+                     size-lg="5"
+                     size-xl="5">
+                <ion-avatar class="my-avatar">
+                    <img [src]="this.user.profilePhoto">
+                </ion-avatar>
+            </ion-col>
+
+            <ion-col size="2"
+                     size-xl="1">
+                <div class="metrics center">
+                    <h4><b>4</b><br>Eventos</h4>
+                </div>
+            </ion-col>
+
+            <ion-col size="2"
+                     size-xl="1">
+                <div class="metrics center">
+                    <h4><b>1000000</b><br>seguindo</h4>
+                </div>
+            </ion-col>
+
+            <ion-col size="2"
+                     size-xl="1">
+                <div class="metrics center">
+                    <h4><b>1000000</b><br>seguido</h4>
+                </div>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col size="3"
+                     size-xs="12"
+                     size-sm="12"
+                     size-md="6"
+                     size-lg="3"
+                     size-xl="3">
+                <mat-card>
+                    <img mat-card-image
+                         src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F56846865%2F224417816684%2F1%2Foriginal.20190214-225017?w=512&auto=compress&rect=0%2C0%2C2160%2C1080&s=3d60aed454750f285aa1f51d2ddfa1ee"
+                         alt="event image">
+
+                    <mat-card-content>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </mat-card-content>
+
+                    <mat-card-actions align="end">
+                        <button mat-icon-button (click)="moreDetails()">
+                            <mat-icon>open_in_new</mat-icon>
+                        </button>
+
+                        <button mat-icon-button color="warn">
+                            <mat-icon>favorite</mat-icon>
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </ion-col>
+
+            <ion-col size="3"
+                     size-xs="12"
+                     size-sm="12"
+                     size-md="6"
+                     size-lg="3"
+                     size-xl="3">
+                <mat-card>
+                    <img mat-card-image
+                         src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F66748177%2F313976638560%2F1%2Foriginal.20190728-042604?w=512&auto=compress&rect=0%2C0%2C2160%2C1080&s=46076c071890a1cd2af2d373c6209eff"
+                         alt="event image">
+
+                    <mat-card-content>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </mat-card-content>
+
+                    <mat-card-actions align="end">
+                        <button mat-icon-button (click)="moreDetails()">
+                            <mat-icon>open_in_new</mat-icon>
+                        </button>
+
+                        <button mat-icon-button color="warn">
+                            <mat-icon>favorite</mat-icon>
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </ion-col>
+
+            <ion-col size="3"
+                     size-xs="12"
+                     size-sm="12"
+                     size-md="6"
+                     size-lg="3"
+                     size-xl="3">
+                <mat-card>
+                    <img mat-card-image
+                         src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F48180679%2F164728825173%2F1%2Foriginal.jpg?w=512&auto=compress&rect=100%2C0%2C718%2C359&s=e24b7f413f505268d4f3021d156d1804s"
+                         alt="event image">
+
+                    <mat-card-content>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </mat-card-content>
+
+                    <mat-card-actions align="end">
+                        <button mat-icon-button (click)="moreDetails()">
+                            <mat-icon>open_in_new</mat-icon>
+                        </button>
+
+                        <button mat-icon-button color="warn">
+                            <mat-icon>favorite</mat-icon>
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </ion-col>
+
+            <ion-col size="3"
+                     size-xs="12"
+                     size-sm="12"
+                     size-md="6"
+                     size-lg="3"
+                     size-xl="3">
+                <mat-card>
+                    <img mat-card-image
+                         src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F72254057%2F177963135371%2F1%2Foriginal.20190910-141856?w=512&auto=compress&rect=0%2C0%2C1920%2C960&s=7fca57f64d988aa0c5bbb6c5de3995e0"
+                         alt="event image">
+
+                    <mat-card-content>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </mat-card-content>
+
+                    <mat-card-actions align="end">
+                        <button mat-icon-button (click)="moreDetails()">
+                            <mat-icon>open_in_new</mat-icon>
+                        </button>
+
+                        <button mat-icon-button color="warn">
+                            <mat-icon>favorite</mat-icon>
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </ion-col>
+        </ion-row>
+    </div>
+</ion-content>

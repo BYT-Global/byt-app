@@ -16,4 +16,6 @@ export class TokenService {
     getToken = () => window.localStorage.getItem(key);
 
     removeToken = () => window.localStorage.removeItem(key);
+
+    tokenDecode = () => this._jwtHelperService.decodeToken(this.getToken());
 }

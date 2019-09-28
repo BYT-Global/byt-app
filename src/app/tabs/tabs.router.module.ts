@@ -12,7 +12,7 @@ const routes: Routes = [
                 children: [
                     {
                         path: '',
-                        loadChildren: () => import('../events/events.module').then(m => m.EventsPageModule)
+                        loadChildren: () => import('../pages/events/events.module').then(m => m.EventsPageModule)
                     }
                 ]
             },
@@ -21,7 +21,16 @@ const routes: Routes = [
                 children: [
                     {
                         path: '',
-                        loadChildren: () => import('../friends/friends.module').then(m => m.FriendsPageModule)
+                        loadChildren: () => import('../pages/friends/friends.module').then(m => m.FriendsPageModule)
+                    }
+                ]
+            },
+            {
+                path: 'my-page',
+                children: [
+                    {
+                        path: '',
+                        loadChildren: () => import('../pages/my-page/my-page.module').then(m => m.MyPagePageModule)
                     }
                 ]
             },
@@ -34,12 +43,12 @@ const routes: Routes = [
     },
     {
         path: '',
-        redirectTo: '/tabs/events',
+        redirectTo: '/tabs/my-page',
         pathMatch: 'full'
     },
     {
         path: 'event-details',
-        loadChildren: () => import('../event-details/event-details.module').then(m => m.EventDetailsPageModule)
+        loadChildren: () => import('../pages/event-details/event-details.module').then(m => m.EventDetailsPageModule)
     }
 ];
 
